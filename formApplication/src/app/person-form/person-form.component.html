@@ -1,0 +1,22 @@
+<form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+    <label for="firstName">First Name:</label>
+    <input id="firstName" formControlName="firstName" required>
+  
+    <label for="lastName">Last Name:</label>
+    <input id="lastName" formControlName="lastName" required>
+  
+    <label for="designation">Designation:</label>
+    <input id="designation" formControlName="designation" required>
+  
+    <label for="skills">Skills:</label>
+    <input id="skills" formControlName="skills" required>
+  
+    <label for="salary">Salary:</label>
+    <input id="salary" formControlName="salary" required type="number">
+  
+    <label for="dateOfJoining">Date of Joining:</label>
+    <input id="dateOfJoining" formControlName="dateOfJoining" required type="date">
+  
+    <button type="submit">Add Employee</button>
+  </form>
+  

@@ -1,0 +1,13 @@
+<h1>Employee Details</h1>
+<app-person-form (employeeAdded)="addEmployee($event)"></app-person-form>
+
+<h2>Added Employees:</h2>
+<ul>
+  <li *ngFor="let employee of employees">
+    {{ employee.firstName }} {{ employee.lastName }} - 
+    {{ employee.designation }} - 
+    Skills: {{ employee.skills }} - 
+    Salary: ${{ employee.salary }} - 
+    Date of Joining: {{ employee.dateOfJoining | date:'longDate' }}
+  </li>
+</ul>
