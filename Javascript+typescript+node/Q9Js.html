@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Prompt</title>
+</head>
+<body>
+    <script>
+        let num;
+
+        do {
+            num = prompt("Enter a number greater than 10:");
+            num = Number(num);
+        } while (num <= 10 || isNaN(num));
+
+        console.log(`You entered a number greater than 10: ${num}`);
+    </script>
+</body>
+</html>
